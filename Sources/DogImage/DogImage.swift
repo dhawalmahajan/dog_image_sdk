@@ -17,7 +17,7 @@ struct Dog: Decodable {
 
 @available(iOS 13.00, *)
 @available(macOS 10.15, *)
-final class DogImageLibrary {
+public class DogImageLibrary {
     let viewModel: DogImageViewModel?
     
     init(viewModel: DogImageViewModel = DogImageViewModel()) {
