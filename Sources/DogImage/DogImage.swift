@@ -27,24 +27,24 @@ public class DogImageLibrary {
         }
     }
     
-     func fetchDogImages() async {
+    public  func fetchDogImages() async {
         // Replace with your actual API URL
         await viewModel?.fetchDogImages()
     }
     
-    func getImage() -> URL? {
+    public func getImage() -> URL? {
         viewModel?.getImage()
     }
     
-    func getImages(number: Int) -> [URL] {
+    public func getImages(number: Int) -> [URL] {
         viewModel?.getImages(number: number) ?? []
     }
     
-    func getNextImage() -> URL? {
+    public func getNextImage() -> URL? {
         viewModel?.getNextImage()
     }
     
-    func getPreviousImage() -> URL? {
+    public func getPreviousImage() -> URL? {
         viewModel?.getPreviousImage()
     }
 }
