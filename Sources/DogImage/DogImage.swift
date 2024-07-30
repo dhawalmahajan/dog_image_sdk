@@ -17,10 +17,10 @@ struct Dog: Decodable {
 
 @available(iOS 13.00, *)
 @available(macOS 10.15, *)
-public class DogImageLibrary {
+open class DogImageLibrary {
     let viewModel: DogImageViewModel?
     
-    init(viewModel: DogImageViewModel = DogImageViewModel()) {
+    public init(viewModel: DogImageViewModel = DogImageViewModel()) {
         self.viewModel = viewModel
         Task {
                 await fetchDogImages()

@@ -8,8 +8,8 @@
 import Foundation
 @available(iOS 13.00, *)
 @available(macOS 10.15, *)
-class DogImageViewModel:DogImage {
-    init()  {
+public class DogImageViewModel:DogImage {
+    public init()  {
         Task {
             await fetchDogImages()
         }
