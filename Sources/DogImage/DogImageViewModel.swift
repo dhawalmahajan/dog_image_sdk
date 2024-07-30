@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+@available(iOS 13.00, *)
 @available(macOS 10.15, *)
 class DogImageViewModel:DogImage {
     init()  {

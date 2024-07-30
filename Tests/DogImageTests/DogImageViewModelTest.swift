@@ -8,6 +8,7 @@
 import XCTest
 @testable import DogImage
 @available(macOS 10.15, *)
+@available(iOS 13.00, *)
 final class DogImageViewModelTest: XCTestCase {
 
     var viewModel: DogImageViewModel!

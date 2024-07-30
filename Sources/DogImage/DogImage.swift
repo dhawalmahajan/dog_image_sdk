@@ -15,7 +15,7 @@ struct Dog: Decodable {
     let status:String
 }
 
-
+@available(iOS 13.00, *)
 @available(macOS 10.15, *)
 final class DogImageLibrary {
     let viewModel: DogImageViewModel?

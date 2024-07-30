@@ -1,6 +1,6 @@
 import XCTest
 @testable import DogImage
-
+@available(iOS 13.00, *)
 @available(macOS 10.15, *)
 final class DogImageTests: XCTestCase {
     var dogImageLibrary: DogImageLibrary!
@@ -47,6 +47,7 @@ final class DogImageTests: XCTestCase {
        }
 }
 // Mock class for DogImageViewModel
+@available(iOS 13.00, *)
 @available(macOS 10.15, *)
 class MockDogImageViewModel: DogImageViewModel {
     override init() {
